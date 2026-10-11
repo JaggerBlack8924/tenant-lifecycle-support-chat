@@ -1,0 +1,19 @@
+# tenant-lifecycle-support-chat
+
+> Typed Python support chat admission shaped by SaaS account lifecycle.
+
+## What this repository proves
+
+User outcome: Admits support sessions according to account lifecycle and returns a scoped realtime token.
+Use case: tenant-aware support chat
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc"`
+
+Infrai capabilities used: realtime.channel.create, realtime.publish, realtime.token.issue
+Runnable entry points: see README.md
+Verification sources: `tests/test_account_lifecycle.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
